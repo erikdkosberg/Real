@@ -1,0 +1,76 @@
+<html>
+
+	<head>
+
+		<meta>
+
+		<script>
+
+		document.write("Welcome to the localhost <br/> <br/>".fixed());
+		defaultStatus = "Hello, World!";
+		
+		// Example of checking a value in the window
+		//alert("hello");
+
+		function counter() {
+
+			var n = 25;
+			for (i = 0; i < n; i++) {
+				document.write(i + "  ");
+			};
+
+			document.write("<br/>")
+
+			var n = 10;
+			for (i = 1; i < n; i++) {
+				document.write(i + "<br/>");
+			};
+
+			document.write("<br/>");
+
+			document.write(history.length); 
+		};
+		setTimeout(counter(), 1000);
+
+
+		function time() {
+			var dt = new Date();
+			document.bgColor = "cyan";
+		};
+
+
+		function history() {
+			document.write(history.length);
+		};
+		setInterval(time, 1000);
+		</script>
+	
+	</head>
+
+	<body>
+
+		<div id="main_div">
+
+			<h1> This is a header </h1>
+
+			<p> Here is my paragraph. </p>
+		</div>
+
+
+		<form>
+
+
+		<!--This is an example of navigating to global file on the server-->
+		<input type="button" value="Go to the server home page" onClick="location.href='server.html'">
+
+		<!--This is an example of navigating to nested file on the server-->
+		<input type="button" value="click me" onClick="location.href='Frames/frame1.html'">
+
+
+		</form>
+
+	</body>
+
+</html>
+
+

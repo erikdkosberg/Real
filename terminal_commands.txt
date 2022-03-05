@@ -1,0 +1,164 @@
+This file holds useful commands with example usage for zsh on Mac OS X
+
+ls
+
+	::
+	ls -d py*
+	-->finds all files starting with py in current dir
+	
+	::
+	ls -lt
+	-->view files in list format by last updated time
+
+	::
+	ls -lR foldername/
+	-->list all sub folders and their files in a directory
+mv 
+	::
+	mv terminal_commands.txt Documents/Programming/Other/
+	-->moves file from source to target destination
+
+	::
+	mv file1.txt file2.txt
+	-->rename 'file1.txt. to 'file2.txt'
+
+cat
+	::
+	cat terminal_commands.txt
+	-->view the contents of a file
+
+>
+	::
+	terminal_commands.txt > cats.txt
+	-->replaces contents of a file in another file
+
+>>
+	::
+	terminal_commands.txt >> cats.txt
+	-->appends contents of a file to another file
+
+touch
+	::
+	touch file.txt
+	-->creates a blank file
+rm
+	::
+	rm file.txt
+	-->deletes a file
+
+	::
+	rm -r folder
+	-->deletes a folder with contents
+rmdir
+	::
+	rm folder
+	-->deletes a folder
+gcc
+	::
+	gcc -o program main.c -Wall
+	-->compiles main.c into 'program' with error help
+
+find
+	::
+	find Documents/Programming/ -name "Py*"
+	-->finds all instances of files that start with "Py in Programming folder 
+	
+	::
+	find / -xdev -name arrays.c 
+	-->finds all files named 'arrays.c' on local file system (omit -xdev and enum for multi)
+	
+nano
+	::
+	ctrl + Y --> goes to beg of doc
+	ctrl + V --> goes to end of doc
+	ctrl + W --> search for string
+	ctrl + O --> write out a file
+	ctrl + X --> close nano
+	ctrl + R --> read in a file
+	ctrl + A --> goes to beg of line
+	ctrl + E --> goes to end of line
+	ctrl + shift + 6 --> start cut mark
+	ctrl + K --> cut
+arp
+	::
+	arp -a
+	-->lists all devices connected to your network
+
+ssh
+	::
+	ssh pi@192.186.68.47
+	-->connect to Raspberry Pi
+scp
+	::
+	scp pi@192.186.68.47:Desktop/image.jpg .
+	->copy contents of pi to current dir
+
+Raspberry Pi
+
+	::
+	sudo raspi-config
+	-->enter the config interface
+
+
+	::
+	gpio readall > voltages.txt
+	-->view all the gpios and store results to text file
+
+	::
+	cat /proc/...
+		cpuinfo-->get info about your processor
+		meminfo-->get info about memory
+		partitions->size and number of partitions
+
+	::
+	vcgencmd measure_temp
+	-->reveal CPU temp
+	
+	::
+	vcgencmd get_mem arm && vcgencmd get_mem gpu
+	-->reveal mem split between CPU and GPU (can be adj in config)
+
+	::
+	free -o -h
+	-->available system memory
+
+	::
+	top d1
+	-->get load on CPU with details on each core
+
+	::
+	df -h
+	-->check disk space
+
+	::
+	uptime
+	-->display load average
+	
+	::
+	ifconfig
+	-->check status of network youre connected to
+
+	::
+	iwconfig
+	-->check which network the wireless adapter is using
+
+	::
+	iwlist wlan0 scan
+	-->prints list of currently available wifi networks
+
+	::
+	nmap
+	-->scan network for dev, port, protocol, state, OS, MAC and more
+
+	::
+	ping
+	-->test connectivity of two devices
+	
+	::
+	wget http://www.example.com/example.txt
+	-->download file from web and save to current dir
+
+pip
+	::
+	pip freeze
+	-->view all python packages and their versions
