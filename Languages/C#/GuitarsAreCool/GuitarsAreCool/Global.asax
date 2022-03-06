@@ -1,1 +1,0 @@
-﻿<%@ Application Inherits="GuitarsAreCool.Global" %>
