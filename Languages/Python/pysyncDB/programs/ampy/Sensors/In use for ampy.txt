@@ -1,0 +1,10 @@
+For the ampy project, I will be using 7 different sensors/modules to begin with:
+	1.) LCD1602 Module (with pin header)
+	2.) Power Supply Module
+	3.) MAX7219 Module
+	4.) Joystick Module
+	5.) Rotary Encoder Module
+	6.) Digital Temperature Sensor
+	7.) Membrane Switch Module
+
+I also have a MEGA 2560 Controller Board with a breadboard. Ultimately data from these modules will need to be transferred(and read) from the raspberry pi.v

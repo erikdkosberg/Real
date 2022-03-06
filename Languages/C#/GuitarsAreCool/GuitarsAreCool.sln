@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarsAreCool", "GuitarsAreCool\GuitarsAreCool.csproj", "{89F2FA3F-EC00-4E4E-815E-42B4B88D001D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuitarsAreCool.Tests", "GuitarsAreCool.Tests\GuitarsAreCool.Tests.csproj", "{29384C64-965D-4FC0-B35F-73B47225129C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89F2FA3F-EC00-4E4E-815E-42B4B88D001D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89F2FA3F-EC00-4E4E-815E-42B4B88D001D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89F2FA3F-EC00-4E4E-815E-42B4B88D001D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89F2FA3F-EC00-4E4E-815E-42B4B88D001D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29384C64-965D-4FC0-B35F-73B47225129C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29384C64-965D-4FC0-B35F-73B47225129C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29384C64-965D-4FC0-B35F-73B47225129C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29384C64-965D-4FC0-B35F-73B47225129C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

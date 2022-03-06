@@ -1,0 +1,5 @@
+Welcome to the READme for ampy!
+
+ampy is a project built in python where I will convert an old amp I got from a thrift store a while back into a fully functional interface for your car. I plan to use the housing of the amp to put the LCD screen with the raspberry pi on it. Then underneath it I will use the existing space in the frame to put other relevant sensors that will be later defined in the program. I will buck down and run the pi at 5v from a power supply module with a 9v battery.
+
+The scope of this project is to have a LCD touch screen interface for your car, running on a raspberry pi; that pc will then communicate with the Arduino 2560 which will have other sensors on it doing fun things. A feature that I think would be really cool would be a way to log data to the ampy either remotely or by hand; and to be able to log that data without actually needing the ampy in the car at all times. I think it would be cool to be more of a diagnostic and data visualization device that a full on mounted radio. Maybe along the way we can add some features that do some of the basic head-unit functionalities(i.e. 

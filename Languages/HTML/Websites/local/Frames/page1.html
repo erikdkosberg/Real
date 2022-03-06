@@ -1,0 +1,45 @@
+<html>
+
+	<head>
+	
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+
+
+	<body>
+
+		<h1> Line Chart Example </h1>
+
+		<p>
+
+		This chart is being generated with the Plotly.js API
+
+		</p>
+
+		<div id="tester" style="width:90%;height:250px;"></div>
+
+		<script>
+
+		TESTER = document.getElementById('tester');
+
+		Plotly.plot( TESTER, [{
+			x: [1, 2, 3, 4, 5],
+			y: [1, 2, 4, 8, 16] }], { 
+			margin: { t: 0 } }, {showSendToCloud:true} );
+
+
+		</script>
+
+
+
+		<div id="main_div">
+		
+		</div>
+	</body>
+
+</html>
+
+
+
+
+

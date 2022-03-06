@@ -1,0 +1,21 @@
+SCOPE
+
+**live**
+
+This document will define the relevant scope of the project. Mark as 'live' if in progress.
+
+The scope of ampy is defined on a broad level as a portable interface to the technologically savvy consumer interested in improving either the performance or fuel economy of their vehicle. The hope is that in the course of developing this project, scalability will always be kept as the highest priority. For example, a benchmark of performance should always be regarded as the transfer of functionality across different vehicles with minimal configuration adjustments.
+
+While the OBD port offers a wide array of sensors which have the ability for commands to be written to, there are a select few which ampy will intend to focus on. These include:
+	1.) Air/Fuel ratio
+	2.) Timing Advance
+	3.) Throttle Position Sensor
+
+The biggest of these three, obviously is the AFR, which can be adjusted on a flat curve. The air/fuel ratio of a vehicle is optimally designed to default to the stoichiometric ratio of 14.7 parts air to 1 part fuel. If this ratio is increased (i.e. closer to 1:1), then performance gains will be realized on the basis of more explosions per second. When there is more fuel, there is a higher probability of combustion. When this combustion becomes more certain, the explosions happen more often. This concept can also be utilized in the reverse, whereby an AFR approaching a ratio lesser than 14.7:1 will therefor improve fuel economy, at the expense of performance.
+
+Adjustments to the AFR should be made on a flat curve basis. To do this, requires an initial baseline reading of current ratios at specified RPM's. For the sake of simplicity, let us consider the scenario where a vehicle has these ratio configurations: an RPM of 1000 had an AFR of 13.0, 2000 had 14.0, and 3000 had 15.0. To tune for performance, the new ratios might look like [12.0, 13.0, 14.0]; tuning for Fuel Economy would look something like: [14.0, 15.0, 16.0]. 
+
+**notice how all of these values are either increased or decreased by the exact same amount, also please note that these are not the actual ratios that the ECU should be tuned to; rather, seek to demonstrate a basic point of increasing/decreasing a curve by a fixed amount**
+
+Changing these ratios is not the only thing that ampy can do. As a portable interface to your vehicle:
+

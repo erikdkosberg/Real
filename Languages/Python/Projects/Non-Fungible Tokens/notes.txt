@@ -1,0 +1,14 @@
+The purpose of this directory is to quickly create and mint NFTs all from the command line.
+
+This process starts with creating an image, in the file format of png
+
+To create this file, we will be using the pygame library. This library allows us to quickly
+create and place shapes on a window - and ultimately save that window as a png file.
+
+shapes.py is an extension of the pygame api, allowing you to quickly customize new shapes.
+
+mint.py will process a list of png files and mint them to opensea
+
+ledger.py returns a dictionary of all NFTs and their relevant information
+
+
