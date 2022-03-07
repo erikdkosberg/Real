@@ -1,5 +1,3 @@
-This project seeks to provide a seamless interface between Python, JS, and HTML.
-
 Python makes it easy to get your ideas out and test them, very quickly.
 
 We need JaveScript to talk to the browser that will be hosting our website. 
