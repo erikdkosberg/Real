@@ -1,7 +1,6 @@
 
 import os
 
-os.chdir("Server/HTML/Websites/local/")
+os.chdir("Server/")
 os.system("python3 -m http.server 8000")
-webbrowser.open("http://localhost:8000")
 
