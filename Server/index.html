@@ -32,39 +32,84 @@
 		// Continuous calls go here; i.e. polling data source
 		setTimeout(reader(), 1000);
 
+		// White-box code
+		$(".white-box").hover(function() {
+
+			$(".container").css("background-color","#EFF6FC");
+  
+			}, function() {
+  
+				$(".container").css("background-color","#f4f5f4");
+  
+			});
+
 		</script>
-	
+
+
+	<style>
+		table, th, td {
+		border:1px solid black;
+		}
+
+
+		.container {
+			position: absolute;
+			margin: 0;
+			width:25%;
+			background:#f4f5f4;
+			min-height:600px;
+			}
+
+	</style>	
+
 	</head>
 
 	<body>
 
 		<div id="main_div">
 
-			<h1> Real API </h1>
 
-				<p>
-			 	A simple interface for Python, JS, and HTML;
-					to facilitate updating a webpage in *real-time*
-					via the localhost.
-				 </p>
+		<!--Default Table-->
+		<table style="width:100%">
+			<tr>
+			<th>Python</th>
+			<th>JavaScript</th>
+			<th>HTML</th>
+			</tr>
+			<tr>
+				<td> <input type="button" value="hello"> </td>
+				<td> <input type="button" value="hello"> </td>
+				<td> <input type="button" value="hello"> </td>
+			</tr>
+		</table>
+
+
+			<h3> REAL - Basic Interface for Python, JS, and HTML <h3>
+
+		<div> 
+			<!--This is an example of navigating to global file on the server-->
+			<input type="button" value="Go to the server home page" onClick="location.href='server.html'">
+
+			<!--This is an example of navigating to nested file on the server-->
+			<input type="button" value="click me" onClick="location.href='Frames/frame1.html'">
+		</div>
+			
 		</div>
 
-		<!--To place our content from data.txt-->
-		<div id="test"></div>
 
-		<form>
+		<div class="container">
 
+			<!--To place our content from data.txt-->
+			<div id="test"> </div>
+		
+  		</div>
 
-		<!--This is an example of navigating to global file on the server-->
-		<input type="button" value="Go to the server home page" onClick="location.href='server.html'">
-
-		<!--This is an example of navigating to nested file on the server-->
-		<input type="button" value="click me" onClick="location.href='Frames/frame1.html'">
-
-
-		</form>
-
+	
+		
+		</div>
 	</body>
+
+
 
 </html>
 
