@@ -1,1 +1,1 @@
-[partno][trace:values][DT][Repo]
+__local text file__

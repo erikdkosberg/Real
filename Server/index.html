@@ -6,8 +6,9 @@
 
 		<script>
 
-		document.writeln("Welcome to the localhost".fixed());
-		
+		document.write("Welcome to the localhost".fixed());
+		document.write("<br/> <br/>");
+
 		// Master Dictionary to pass between Python and JS
 		var data = {};
 
@@ -34,22 +35,19 @@
 
 		// White-box code
 		$(".white-box").hover(function() {
-
 			$(".container").css("background-color","#EFF6FC");
-  
-			}, function() {
-  
-				$(".container").css("background-color","#f4f5f4");
-  
+				},
+			function() {
+				$(".container").css("background-color","#f4f5f4");  
 			});
 
 		</script>
 
 
 	<style>
-		table, th, td {
+		table, td {
 		border:1px solid black;
-		}
+		background-color: white}
 
 
 		.container {
@@ -61,7 +59,7 @@
 			}
 
 	</style>	
-
+		
 	</head>
 
 	<body>
@@ -77,25 +75,23 @@
 			<th>HTML</th>
 			</tr>
 			<tr>
-				<td> <input type="button" value="hello"> </td>
-				<td> <input type="button" value="hello"> </td>
+			
+				<!--This is an example of navigating to global file on the server-->
+				<td><input type="button" value="Edit" onClick="location.href='server.html'"></td>
+
+				<!--This is an example of navigating to nested file on the server-->
+				<td><input type="button" value="Edit" onClick="location.href='Frames/frame1.html'"></td>
+		
 				<td> <input type="button" value="hello"> </td>
 			</tr>
 		</table>
+		
+		
 
-
-			<h3> REAL - Basic Interface for Python, JS, and HTML <h3>
-
-		<div> 
-			<!--This is an example of navigating to global file on the server-->
-			<input type="button" value="Go to the server home page" onClick="location.href='server.html'">
-
-			<!--This is an example of navigating to nested file on the server-->
-			<input type="button" value="click me" onClick="location.href='Frames/frame1.html'">
-		</div>
 			
 		</div>
 
+		<br/>
 
 		<div class="container">
 
