@@ -6,43 +6,32 @@
 
 		<script>
 
-		document.write("Welcome to the localhost <br/> <br/>".fixed());
-		defaultStatus = "Hello, World!";
+		document.writeln("Welcome to the localhost".fixed());
 		
-		// Example of checking a value in the window
-		//alert("hello");
+		// Master Dictionary to pass between Python and JS
+		var data = {};
 
-		function counter() {
-
-			var n = 25;
-			for (i = 0; i < n; i++) {
-				document.write(i + "  ");
-			};
-
-			document.write("<br/>")
-
-			var n = 10;
-			for (i = 1; i < n; i++) {
-				document.write(i + "<br/>");
-			};
-
-			document.write("<br/>");
-
-			document.write(history.length); 
-		};
-		setTimeout(counter(), 1000);
-
-
-		function time() {
-			var dt = new Date();
+		// Initialize attributes on the main page
+		function init_page() {
 			document.bgColor = "cyan";
 		};
 
+		// Main loop to index through data.txt using AJAX
+		function reader() {
+			const xhttp = new XMLHttpRequest();
+			xhttp.onload = function() {
+				document.getElementById("test").innerHTML = this.responseText;
+			}
+			xhttp.open("GET", "data.txt");
+			xhttp.send();
+		};			
 
-		function history() {
-			document.write(history.length);
-		};
-		setInterval(time, 1000);
+		// Discrete function calls go here; only called once
+		init_page();
+
+		// Continuous calls go here; i.e. polling data source
+		setTimeout(reader(), 1000);
+
 		</script>
 	
 	</head>
@@ -51,11 +40,17 @@
 
 		<div id="main_div">
 
-			<h1> This is a header </h1>
+			<h1> Real API </h1>
 
-			<p> Here is my paragraph. </p>
+				<p>
+			 	A simple interface for Python, JS, and HTML;
+					to facilitate updating a webpage in *real-time*
+					via the localhost.
+				 </p>
 		</div>
 
+		<!--To place our content from data.txt-->
+		<div id="test"></div>
 
 		<form>
 
