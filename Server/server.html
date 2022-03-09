@@ -5,9 +5,18 @@
 		<script src="Interface/JS/Scripts/test.js">
 		
 		</script>
+		
 
+		<style>
+			.container {
+				position: absolute;
+				margin: 0;
+				width:25%;
+				background:#f4f5f4;
+				min-height:600px;
+				}
+		</style>
 	</head>
-
 
 	<body>
 	
@@ -21,10 +30,37 @@
 			function go_back() {
 				history.go(-1);
 			};
+
+			// Main loop to index through data.txt using AJAX
+			function reader() {
+				const xhttp = new XMLHttpRequest();
+				xhttp.onload = function() {
+					document.getElementById("test").innerHTML = this.responseText;
+				}
+				xhttp.open("GET", "data.txt");
+				xhttp.send();
+			};
+		
+			// Continuous calls go here; i.e. polling data source
+			setTimeout(reader(), 1000);
+			
+			// White-box code
+			$(".white-box").hover(function() {
+				$(".container").css("background-color","#EFF6FC");
+					},
+				function() {
+					$(".container").css("background-color","#f4f5f4");  
+				});
 		</script>
 
 		<input type="button" value="go back" onClick="go_back()">
 
+		<div class="container">
+
+			<!--To place our content from data.txt-->
+			<div id="test"> </div>
+		
+  		</div>
 
 	</body>
 

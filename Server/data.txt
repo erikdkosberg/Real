@@ -1,1 +1,12 @@
-__local text file__
+Local HTTP servers can be used to display HTML files in the browser. We can run these servers with built-in Python modules.
+
+The server will be started on some port, which can be opened in a browser at:
+	http://localhost:port
+
+When this URL is entered, it looks for any files named ‘index.html’ placed in the same directory from which the server was started – to display in the browser window.
+
+JavaScript can be placed directly inside of an HTML script tag to manipulate or call attributes and methods with in the (DOM) Document Object Model.
+
+(AJAX) Asynchronous JavaScript and XML can be used to read files from a local web server. The more modern approach is to use the fetch API.
+
+JS runs on the client’s browser, whereas if we wanted to add, update, or delete files we would need code living on the server. This is where a server-side language like PHP (we can also use Python) comes in to play.
