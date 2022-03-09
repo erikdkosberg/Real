@@ -1,40 +1,35 @@
 <html>
 
 	<head>
-	
-		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+        <script>
+            function call() {
+                document.write("blog post".fixed());
+                document.bgColor = "cyan";
+            };
+            
+            call();
+        </script>
 	</head>
 
 
 	<body>
 
-		<h1> Line Chart Example </h1>
+		<p>Local HTTP servers can be used to display HTML files in the browser. We can run these servers with PHP on the localhost.</p>
+        
+        <p>The server will be started on some port, which can be opened in a browser at:
+            http://localhost:port</p>
 
-		<p>
+        <p>When this URL is entered, it looks for any files named ‘index.html’ placed in the same directory from which the server was started – to display in the browser window.</p>
 
-		This chart is being generated with the Plotly.js API
+        <p>JavaScript can be placed directly inside of an HTML script tag to manipulate or call attributes and methods with in the (DOM) Document Object Model.</p>
 
-		</p>
+        <p>(AJAX) Asynchronous JavaScript and XML can be used to read files from a local web server. The more modern approach is to use the fetch API.</p>
 
-		<div id="tester" style="width:90%;height:250px;"></div>
-
-		<script>
-
-		TESTER = document.getElementById('tester');
-
-		Plotly.plot( TESTER, [{
-			x: [1, 2, 3, 4, 5],
-			y: [1, 2, 4, 8, 16] }], { 
-			margin: { t: 0 } }, {showSendToCloud:true} );
-
-
-		</script>
+        <p>JS runs on the client’s browser, whereas if we wanted to add, update, or delete files we would need code living on the server. This is where a server-side language like PHP (we can also use Python) comes in to play.</p>
 
 
 
-		<div id="main_div">
-		
-		</div>
 	</body>
 
 </html>
